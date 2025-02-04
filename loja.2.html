@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja - Academia Espaço Vida</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="loja.css">
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">MENU</a></li>
+      <li><a href="modalidades.html">MODALIDADES</a></li>
+      <li><a href="loja.2.html">LOJA</a></li>
+    </ul>
+  </nav>
+  <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=558531229404" target="_blank"><i class="fa fa-whatsapp"></i>
+  </a>
+  <header>
+    <div>
+      <img class="imagem" src="https://www.caace.org.br/wp-content/uploads/2021/09/LOGO_ACADEMIA_ESPA%C3%87O_VIDA.jpg" alt="Logo Espaço Vida">
+    </div>
+    <h2>Loja Academia Espaço Vida</h2>
+    <p>Av. Deputado Oswaldo Studart, 175 – Fátima, Fortaleza – CE, 60411-260</p>
+    <p>Conheça nossos produtos e garanta o seu agora mesmo!</p>
+    <p class="cor">A VIDA É MOVIMENTO</p>
+  </header>
+
+  <section id="produtos">
+    <div class="produto" onclick="redirectToWhatsApp('Camiseta Espaço Vida')">
+      <img src="img/WhatsApp Image 2025-01-09 at 14.31.47.jpeg" alt="Camiseta Espaço Vida">
+      <h3>Camiseta Espaço Vida</h3>
+      <p>R$ 60,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Beta-Alanina')">
+      <img src="https://cdn.awsli.com.br/2500x2500/1190/1190852/produto/140452827/1bae88ca18.jpg" alt="Betalanina">
+      <h3>Betalanina</h3>
+      <p>R$ 80,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Creatina')">
+      <img src="https://a-static.mlcdn.com.br/800x560/creatina-hardcore-100-pura-300g-integralmedica-integralmedica/variedadessuplementosartigosemge/integralcreatina300g1una/06035bd2d4a2974f39a560d90409af19.jpeg" alt="Creatina">
+      <h3>Creatina 300g</h3>
+      <p>R$ 120,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Rapid Rage 300g')">
+      <img src="img/rapidarage.webp" alt="Garrafa de Água Personalizada">
+      <h3>Rapid Rage 300g</h3>
+      <p>R$ 150,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Rapid Fuse')">
+      <img src="img/rapid-lado.png" alt="Rapid Fuse">
+      <h3>Rapid Fuse</h3>
+      <p>R$ 100,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Rapid Sleep')">
+      <img src="img/img_2464_jpg-8a49d7fbae207f6dc117135440731100-640-0.jpg" alt="Rapid Sleep">
+      <h3>Rapid Sleep</h3>
+      <p>R$ 100,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Pré-Treino Psycho')">
+      <img src="https://images.tcdn.com.br/img/img_prod/1017799/pre_treino_psycho_killer_294g_demons_lab_727_1_936e9c2fadf0192316baf853f4a0697c.png" alt="Rapid Sleep">
+      <h3>Pré-Treino Psycho</h3>
+      <p>R$ 170,00</p>
+    </div>
+    <div class="produto" onclick="redirectToWhatsApp('Whey Fort 3W (900G)')">
+      <img src="https://images.tcdn.com.br/img/img_prod/666884/whey_fort_3w_pote_900g_cookies_n_cream_458_1_6c6bb051111bd87ecc6bef81a83ac245.jpg" alt="Whey Fort 3W (900G)">
+      <h3>Whey Fort 3W (900G)</h3>
+      <p>R$ 230,00</p>
+    </div>
+  </section>
+
+  <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=558531229404" target="_blank"><i class="fa fa-whatsapp"></i></a>
+
+  <footer>
+    <p>© 2025 Academia Espaço Vida. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function redirectToWhatsApp(productName) {
+      const phone = "558531229404";
+      const message = `Olá, tenho interesse no produto '${productName}'.`;
+      const url = `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

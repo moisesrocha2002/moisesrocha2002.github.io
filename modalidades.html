@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Vida - Modalidades</title>
+  <link rel="stylesheet" type="text/css" href="modalidades.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="meujavascript.js"></script>
+  <style>
+    body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    background-color: black;
+  }
+  .title {
+    color: #5c6ac4;
+  }
+  h5 {
+    color: black;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-left:10px;
+    width: 100%;
+  }
+  nav {
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar a navegação */
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+  }
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente */
+    color: #14d60d;
+    transform: scale(1.1); /* Aumenta ligeiramente o link */
+  }
+  .whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 5px 8px #888;
+    z-index: 1000;
+  }
+  
+  .fa-whatsapp {
+    padding-top: 15px;
+  }
+  .imagem {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin-bottom: 10px;
+  }
+  .centro {
+    text-align: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  #sobre {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  .container {
+    color: #fff;
+  }
+  .cor {
+    color: green;
+  }
+  .cor2{
+    color: white;
+    text-align: center;
+  }
+
+
+/* Estilos adicionais para a seção de modalidades */
+.modalidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .modalidade {
+    background-color: #333;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .modalidade1{
+    width: 100%;
+  height: 150px; /* Ajuste a altura conforme necessário */
+  object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+  border-radius: 10px; /* Adiciona bordas arredondadas, opcional */
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+
+
+  }
+
+  .modalidade:hover {
+    transform: scale(1.05);
+  }
+  .modalidade h3 {
+    color: #14d60d;
+  }
+  .modalidade p {
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    margin-top: 20px;
+  }
+  </style>
+
+  <script>
+    // Função inline para redirecionar ao WhatsApp com mensagem personalizada
+    function enviarMensagem(modalidade) {
+      const whatsappNumber = "558531229404";
+      const mensagem = `Olá, tenho interesse na modalidade ${modalidade}. Gostaria de saber mais informações.`;
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</head>
+<body>
+  <!-- Cabeçalho e navegação -->
+  <nav>
+    <ul>
+      <li><a href="index.html">MENU</a></li>
+      <li><a href="modalidades.html">MODALIDADES</a></li>
+      <li><a href="loja.2.html">LOJA</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="centro">
+      <img class="imagem" src="https://www.caace.org.br/wp-content/uploads/2021/09/LOGO_ACADEMIA_ESPA%C3%87O_VIDA.jpg" alt="Logo Espaço Vida">
+    </div>
+    <section id="sobre">
+      <div class="container">
+        <h2>Bem-vindo à Academia Espaço Vida</h2>
+        <p>Aqui você encontra o melhor em fitness e bem-estar no Bairro de Fátima.</p>
+        <p class="cor">A VIDA É MOVIMENTO</p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Seção de Modalidades -->
+  <section id="modalidades">
+    <h2 class="cor2">Nossas Modalidades</h2>
+    <div class="modalidades-container">
+      <div class="modalidade" onclick="enviarMensagem('Musculação')">
+        <h3>Musculação</h3>
+        <img class="modalidade1" src="https://vitat.com.br/wp-content/uploads/2019/07/sporty-athletic-woman-in-crossfi.jpg" alt="Musculação">
+        <p>Treinos com objetivo no ganho de massa muscular, definição muscular e condicionamento físico.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Jiu-Jitsu Infantil')">
+        <h3>Jiu-Jitsu Infantil</h3>
+        <img class="modalidade1" src="img/WhatsApp Image 2025-01-14 at 18.14.54.jpeg" alt="Jiu Jitsu kids">
+        <p>Desenvolvimento de habilidades de autodefesa e disciplina para crianças, com treinos seguros e educativos.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Jiu-Jitsu Adulto')">
+        <h3>Jiu-Jitsu Adulto</h3>
+        <img class="modalidade1" src="https://static.wixstatic.com/media/0b9fcd_dadd70c0263245feaba33baaa574b772~mv2_d_3600_2403_s_4_2.jpg/v1/fill/w_980,h_654,al_c,q_85,usm_0.66_1.00_0.01/0b9fcd_dadd70c0263245feaba33baaa574b772~mv2_d_3600_2403_s_4_2.jpg" alt="Jiu Jitsu adulto">
+        <p>Treinos de jiu-jitsu para adultos, com foco em técnicas avançadas, resistência e força.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Muay Thai')">
+        <h3>Muay Thai</h3>
+        <img class="modalidade1" src="https://tse1.mm.bing.net/th?id=OIP.J1W5UV0dHbX4evOUec1FZgHaEK&pid=Api&P=0&h=180" alt="Muay Thai">
+        <p>Modalidade de combate, desenvolvendo força, flexibilidade e defesa pessoal.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Sanda')">
+        <h3>Sanda</h3>
+        <img class="modalidade1" src="img/WhatsApp Image 2025-01-07 at 12.51.56.jpeg" alt="Sanda">
+        <p>Boxe chinês, combinando técnicas de socos e chutes com quedas e projeções.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Kung Fu')">
+        <h3>Kung Fu</h3>
+        <img class="modalidade1" src="https://tse4.mm.bing.net/th?id=OIP.UB8lnZjoDtpGW8Vy6At9TQHaEK&pid=Api&P=0&h=180" alt="Kung Fu">
+        <p>Arte marcial tradicional, melhorando foco, disciplina e habilidades motoras.</p>
+      </div>
+      <div class="modalidade" onclick="enviarMensagem('Pilates')">
+        <h3>Pilates</h3>
+        <img class="modalidade1" src="https://tse1.mm.bing.net/th?id=OIP.ecVNz0C4q7f87Fru7kOb-QHaE8&pid=Api&P=0&h=180" alt="Pilates">
+        <p>Exercícios de focados em fortalecimento, flexibilidade e correção postural.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp link -->
+  <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=558531229404" target="_blank"><i class="fa fa-whatsapp"></i></a>
+  <footer>
+     <p>© 2025 Academia Espaço Vida. Todos os direitos reservados.</p>
+  </footer>
+  
+</body>
+</html>

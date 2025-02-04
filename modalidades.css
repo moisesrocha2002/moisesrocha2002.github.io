@@ -1,0 +1,185 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    background-color: black;
+  }
+  .title {
+    color: #5c6ac4;
+  }
+  h5 {
+    color: black;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-left:10px;
+    width: 100%;
+  }
+  nav {
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar a navegação */
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+  }
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente */
+    color: #14d60d;
+    transform: scale(1.1); /* Aumenta ligeiramente o link */
+  }
+  .whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 5px 8px #888;
+    z-index: 1000;
+  }
+  
+  .fa-whatsapp {
+    padding-top: 15px;
+  }
+  .imagem {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin-bottom: 10px;
+  }
+  .centro {
+    text-align: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  #sobre {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  .container {
+    color: #fff;
+  }
+  .cor {
+    color: green;
+  }
+  .cor2{
+    color: white;
+    text-align: center;
+  }
+
+
+/* Estilos adicionais para a seção de modalidades */
+.modalidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .modalidade {
+    background-color: #333;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .modalidade1{
+    width: 100%;
+  height: 150px; /* Ajuste a altura conforme necessário */
+  object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+  border-radius: 10px; /* Adiciona bordas arredondadas, opcional */
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+
+
+  }
+
+  .modalidade:hover {
+    transform: scale(1.05);
+  }
+  .modalidade h3 {
+    color: #14d60d;
+  }
+  .modalidade p {
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    margin-top: 20px;
+  }
+
+  /* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .imagem {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modalidades-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modalidade {
+    width: 100%; /* Modalidade ocupa toda a largura disponível */
+    max-width: 300px; /* Define um limite de largura */
+    margin: 0 auto; /* Centraliza as modalidades */
+  }
+
+  .modalidade1 {
+    height: 120px; /* Ajusta a altura da imagem em telas menores */
+  }
+
+  h2, p {
+    font-size: 18px;
+  }
+
+  .whatsapp-link {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

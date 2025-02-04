@@ -1,0 +1,134 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #14d60d;
+  transform: scale(1.1);
+}
+header {
+  text-align: center;
+  padding: 20px;
+}
+.imagem {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid green;
+  margin-bottom: 10px;
+}
+#produtos {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+#produtos::-webkit-scrollbar {
+  height: 10px;
+}
+#produtos::-webkit-scrollbar-thumb {
+  background: #14d60d;
+  border-radius: 5px;
+}
+#produtos::-webkit-scrollbar-track {
+  background: #333;
+}
+.produto {
+  background-color: #333;
+  flex: 0 0 250px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.produto h3 {
+  margin: 10px 0;
+  color: #14d60d;
+}
+.produto p {
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  margin-top: 20px;
+}
+.whatsapp-link {
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #fff;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 0px 5px 8px #888;
+z-index: 1000;
+}
+
+.fa-whatsapp {
+padding-top: 15px;
+}
+
+.cor{
+  color: green;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column; /* Ajusta a navegação para empilhada */
+    align-items: center;
+    gap: 10px;
+  }
+
+  #produtos {
+    flex-wrap: wrap; /* Permite que os produtos ocupem várias linhas */
+    justify-content: center; /* Centraliza os produtos */
+  }
+
+  .produto {
+    flex: 0 0 calc(50% - 20px); /* Cada produto ocupa 50% da largura com espaçamento */
+    margin-bottom: 20px; /* Espaço entre as linhas */
+  }
+}
